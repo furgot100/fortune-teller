@@ -1,0 +1,39 @@
+<!-- results.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<p class='fortune'>Welcome, {{ fortune['name'] }}! Here is your fortune</p>
+
+<p class='fortune' >
+    {% if fortune['food'] == 'Pizza' %}
+        Amazing! You'll eat pizza sometime this week(no pineapple...)
+    {% endif %}
+    {% if fortune['food'] == 'Burgers' %}
+        You know what's a good burger for halloween? The Texas Chainsaw Massa-Curd Burger
+    {% endif %}
+    {% if fortune['food'] == 'Salad' %}
+        I got a cool place you can check out <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a>
+    {% endif %}
+    {% if fortune['food'] == 'Hot Dogs' %}
+        Is a hot dog a sandwich or worse, a <i>taco</i>. Whatever it is, it's good. Oh right a fortune. Something related to hot dog.
+    {% endif %}
+    <br>
+    <br>
+    {% if fortune['age'] == '60' %}
+        Your age fortune:<br>
+        I don’t want to achieve immortality through my work...I want to achieve it through not dying
+    {% endif %}
+    {% if fortune['age'] == '30' %}
+        Your age fortune:<br>
+        How young can you die of old age?
+    {% endif %}
+    {% if fortune['age'] == '100' %}
+        Your age fortune:<br>
+        You know you’re getting old when you get that one candle on the cake. It’s like, “See if you can blow this out.”
+    {% endif %}
+</p>
+
+
+
+
+{% endblock %}
