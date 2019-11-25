@@ -12,7 +12,7 @@ class AppTests(unittest.TestCase):
         result = self.app.get('/')
         self.assertEqual(result.status_code, 200)
 
-
+    def
 
 
 if __name__ == '__main__':
